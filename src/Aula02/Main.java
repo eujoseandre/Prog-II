@@ -17,16 +17,16 @@ public class Main {
         
         System.out.print("Ano de Fabricação do " + celta.getModelo() + ": ");
         celta.setAnoFabricacao(entrada.nextInt());  
-        celta.imprimir();
+        System.out.println(celta);
         
-        System.out.print("Marca do Uno: ");
+        System.out.print("\nMarca do Carro: ");
         uno.setMarca(entrada.next());
         
-        System.out.print("Modelo do Uno");
+        System.out.print("Modelo do Carro");
         uno.setModelo(entrada.next());
         
         System.out.print("Ano de Fabricação do " + uno.getModelo() + ": ");
         uno.setAnoFabricacao(entrada.nextInt()); 
-        uno.imprimir();
+        System.out.println(uno);
     }
 }

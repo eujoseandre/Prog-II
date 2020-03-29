@@ -1,10 +1,10 @@
-package Aula02;
+package ExerciciosAula02;
 
-public class Carro {
+public class Veiculo {
     private String marca;
     private String modelo;
-    private int anoFabricacao;
-    
+    private double preco = 1250.00;
+
     public String getMarca() {
         return marca;
     }
@@ -13,8 +13,8 @@ public class Carro {
         return modelo;
     }
 
-    public int getAnoFabricacao() {
-        return anoFabricacao;
+    public double getPreco() {
+        return preco;
     }
 
     public void setMarca(String marca) {
@@ -25,12 +25,13 @@ public class Carro {
         this.modelo = modelo;
     }
 
-    public void setAnoFabricacao(int anoFabricacao) {
-        this.anoFabricacao = anoFabricacao;
+    public void setPreco(double preco) {
+        this.preco = preco;
     }
-
+    
     public String toString(){
-        return "Marca: " + this.marca + "\nModelo: " + this.modelo + "\nAno de Fabricação: " + this.anoFabricacao;
+        return " alugou o veiculo "+ this.marca + " no modelo "+ this.modelo + ". "
+                + "O preço total ficou por " + this.preco;
     }
     
 }
